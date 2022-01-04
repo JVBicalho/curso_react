@@ -1,6 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
 import HelloWorld from './components/HelloWorld';
+import SayMyName from './components/SeyMyName';
+import Pessoa from './components/Pessoa';
 
 function App() {
   const name =' JV Bicalho'
@@ -13,11 +15,9 @@ function App() {
   const url =' https://via.placeholder.com/150'
   return (
     <div className="App">
-      <h2>Alterando o JSX</h2>
-      <p>Olá, {newName}</p>
-      <p>Soma : { sum(2,2)}</p>
-      <img src={url} alt="Minha Imagem" />
+      <SayMyName name="JV Bicalho" />
       <HelloWorld/>
+      <Pessoa nome="JV Bicalho" idade="23" profissao="programador" foto={url} />
     </div>
   );
 }
